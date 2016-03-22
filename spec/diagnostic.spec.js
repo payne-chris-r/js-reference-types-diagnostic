@@ -27,11 +27,11 @@ describe('JavaScript references types diagnostic', () => {
     let normalizedWords = normalizeWords(gettysburg);
 
     it('has the correct length', () => {
-      expect(diagnostic.normalizedWords(gettysburg).length).toBe(52);
+      expect(diagnostic.normalizeWords(gettysburg).length).toBe(278);
     });
 
     it('matches expected array', () => {
-      expect(diagnostic.normalizedWords(gettysburg).sort())
+      expect(diagnostic.normalizeWords(gettysburg).sort())
         .toEqual(normalizedWords.sort());
     });
 
@@ -42,7 +42,7 @@ describe('JavaScript references types diagnostic', () => {
     const uniquedWords = uniqueWords(gettysburg);
 
     it('has the correct length', () => {
-      expect(diagnostic.uniqueWords(gettysburg).length).toBe(38);
+      expect(diagnostic.uniqueWords(gettysburg).length).toBe(139);
     });
 
     it('matches expected array', () => {
@@ -55,11 +55,11 @@ describe('JavaScript references types diagnostic', () => {
   describe('word count', () => {
 
     it('has the correct word count', () => {
-      expect(diagnostic.wordCount(gettysburg)).toBe(52);
+      expect(diagnostic.wordCount(gettysburg)).toBe(278);
     });
 
     it('has the correct unique word count', () => {
-      expect(diagnostic.wordCount(gettysburg, true)).toBe(38);
+      expect(diagnostic.wordCount(gettysburg, true)).toBe(139);
     });
 
   });
@@ -69,7 +69,7 @@ describe('JavaScript references types diagnostic', () => {
     const wordFrequencied = wordFrequencies(gettysburg);
 
     it('has the correct length', () => {
-      expect(Object.keys(diagnostic.wordFrequencies(gettysburg)).length).toBe(49);
+      expect(Object.keys(diagnostic.wordFrequencies(gettysburg)).length).toBe(139);
     });
 
     it('matches dictionary', () => {

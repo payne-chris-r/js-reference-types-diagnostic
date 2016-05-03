@@ -3,7 +3,7 @@
   "devel": true,
   "eqeqeq": true,
   "esversion": 6,
-  "jasmine": true,
+  "mocha": true,
   "latedef": true,
   "noarg": true,
   "node": true,
